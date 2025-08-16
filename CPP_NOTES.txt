@@ -1,0 +1,12 @@
+The goal of these modules is to introduce you to Object-Oriented Programming.
+This will be the starting point of your C++ journey. Many languages are recommended
+for learning OOP. We decided to choose C++ since it’s derived from your old friend C.
+Since C++ is a complex language, and in order to keep things simple, your code will
+follow the C++98 standard.
+
+compiling: c++ -Wall -Werror -Wextra -std=c++98
+format: ex00 - ex01 - ex02, and so on...
+class names = in UpperCamelCase format
+Class name and file name must match
+No norminette! but still it has to be understandable
+the using namespace <ns_name> and friend keywords are forbidden

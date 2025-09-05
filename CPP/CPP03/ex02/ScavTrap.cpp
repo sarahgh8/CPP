@@ -1,5 +1,23 @@
 #include "ScavTrap.hpp"
 
+ScavTrap::ScavTrap(ScavTrap &obj) : ClapTrap(obj)
+{
+    this->attack_damage = 20;
+    this->energy_point = 50;
+    this->hit_points = 100;
+}
+
+ScavTrap &ScavTrap::operator=(ScavTrap &obj)
+{
+    if(this != &obj)
+    {
+        this->attack_damage = 20;
+        this->energy_point = 50;
+        this->hit_points = 100;  
+    }
+    return *this;
+}
+
 void ScavTrap::attack(const std::string &target)
 {
     if(energy_point <= 0)

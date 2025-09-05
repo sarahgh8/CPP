@@ -2,18 +2,18 @@
 
 ScavTrap::ScavTrap(ScavTrap &obj) : ClapTrap(obj)
 {
-    this->attack_damage = 20;
-    this->energy_point = 50;
-    this->hit_points = 100;
+    this->attack_damage = obj.attack_damage;
+    this->energy_point = obj.energy_point;
+    this->hit_points = obj.hit_points;
 }
 
 ScavTrap &ScavTrap::operator=(ScavTrap &obj)
 {
     if(this != &obj)
     {
-        this->attack_damage = 20;
-        this->energy_point = 50;
-        this->hit_points = 100;  
+        this->attack_damage = obj.attack_damage;
+        this->energy_point = obj.energy_point;
+        this->hit_points = obj.hit_points;  
     }
     return *this;
 }

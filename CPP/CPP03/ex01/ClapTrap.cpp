@@ -6,6 +6,7 @@ ClapTrap::ClapTrap(ClapTrap &obj)
     this->energy_point = obj.energy_point;
     this->hit_points = obj.hit_points;
 }
+
 ClapTrap &ClapTrap::operator=(ClapTrap &obj)
 {
     if(this != &obj)

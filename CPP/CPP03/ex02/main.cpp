@@ -1,15 +1,14 @@
-#include "ClapTrap.hpp"
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int main()
 {
-    ScavTrap s1("Sarah");
-    ScavTrap s2("Syarah");
+    FragTrap f1("Sarah");
+    FragTrap f2("Syarah");
 
-    s1.attack("Syarah");
-    s1.takeDamage(150);
-    s1.guardGate();
-    s1.beRepaired(150);
+    f1.attack("Syarah");
+    f1.takeDamage(150);
+    f1.highFivesGuys();
+    f1.beRepaired(150);
 
     return 0;
 }

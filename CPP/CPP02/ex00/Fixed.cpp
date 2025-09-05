@@ -5,6 +5,7 @@ Fixed::Fixed()
     fixed_val = 0;
     std::cout << "Default constructor called\n";
 }
+
 Fixed::Fixed(Fixed &obj)
 {
     fixed_val = obj.fixed_val;
@@ -25,7 +26,6 @@ Fixed::~Fixed()
     std::cout << "Destructor called\n";
 
 }
-
 
 int Fixed::getRawBits( void ) const
 {

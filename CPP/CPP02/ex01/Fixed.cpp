@@ -34,7 +34,7 @@ Fixed::Fixed(const int number)
 
 Fixed::Fixed(const float f_number)
 {
-    fixed_val = roundf((f_number) * 256);
+    fixed_val = roundf((f_number) * 256.0);
     std::cout << "FLoat constructor\n";
 }
 
@@ -52,7 +52,7 @@ void Fixed::setRawBits(int const raw)
 
 float Fixed::toFloat(void) const
 {
-    return ((float)fixed_val / 256);
+    return ((float)fixed_val / 256.0);
 }
 
 int Fixed::toInt(void) const

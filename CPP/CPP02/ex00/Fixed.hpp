@@ -3,6 +3,14 @@
 
 #include <iostream>
 
+/**
+ *  This exercise is about the canonical orthodox form
+ *      1. Constructor
+ *      2. Copy Constructor
+ *      3. operator =
+ *      4. Destructor
+ */
+
 class Fixed
 {
     int fixed_val;

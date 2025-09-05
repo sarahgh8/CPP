@@ -5,6 +5,11 @@
 #include <cmath>
 #include <fstream>
 
+/**
+ * This exercise is about creating a new datatype Fixed
+ *  it's a way to represent numbers with a floating point
+ *  with a fraction part which is 8
+ */
 class Fixed
 {
     int fixed_val;
